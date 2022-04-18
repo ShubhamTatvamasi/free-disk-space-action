@@ -1,5 +1,7 @@
 name: "Free Disk Space"
 description: "Free Disk Space"
+icon: "archive"
+color: "green"
 
 runs:
   using: "composite"
