@@ -1,1 +1,1 @@
-# free-disk-space-action
+# free-disk-space
