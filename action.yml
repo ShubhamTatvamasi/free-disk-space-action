@@ -3,6 +3,12 @@ description: "Free Disk Space"
 icon: "archive"
 color: "green"
 
+inputs:
+  remove-swap:
+    description: 'Remove Swap strorage'
+    required: false
+    default: 'true'
+
 runs:
   using: "composite"
   steps:
@@ -19,8 +25,10 @@ runs:
         sudo rm -rf /usr/share/dotnet
         sudo rm -rf /opt/ghc
 
-        sudo swapoff -a
-        sudo rm -f /mnt/swapfile
+        if [[ ${{ inputs.remove-swap }} == 'true' ]]; then
+          sudo swapoff -a
+          sudo rm -f /mnt/swapfile
+        fi
 
         echo "${LINE} After ${LINE}"
         df -h /
