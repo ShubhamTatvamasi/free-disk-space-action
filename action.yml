@@ -9,16 +9,16 @@ runs:
 
     - shell: bash
       env:
-        LINE: ===================================
+        LINE: =======================
       run: |
-        echo ${LINE}
+        echo "${LINE} Before ${LINE}"
         df -h /
-        echo ${LINE}
+        echo "${LINE}${LINE}${LINE}"
 
         sudo rm -rf /usr/local/lib/android
         sudo rm -rf /usr/share/dotnet
         sudo rm -rf /opt/ghc
 
-        echo ${LINE}
+        echo "${LINE} After ${LINE}"
         df -h /
-        echo ${LINE}
+        echo "${LINE}${LINE}${LINE}"
