@@ -9,7 +9,7 @@ runs:
 
     - shell: bash
       env:
-        LINE: =======================
+        LINE: =====================
       run: |
         echo "${LINE} Before ${LINE}"
         df -h /
