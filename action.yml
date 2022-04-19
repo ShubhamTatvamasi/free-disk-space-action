@@ -19,7 +19,6 @@ runs:
       run: |
         echo "${LINE} Before ${LINE}"
         df -h /
-        echo "${LINE}${LINE}${LINE}"
 
         sudo rm -rf /usr/local/lib/android
         sudo rm -rf /usr/share/dotnet
@@ -33,4 +32,3 @@ runs:
 
         echo "${LINE} After ${LINE}"
         df -h /
-        echo "${LINE}${LINE}${LINE}"
