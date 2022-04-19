@@ -29,7 +29,6 @@ runs:
           sudo rm -f /mnt/swapfile
           free -h
         fi
-        free -h
 
         echo "${LINE} After ${LINE}"
         df -h /
