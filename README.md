@@ -1,6 +1,6 @@
 # free-disk-space
 
-This will remove **android**, **dotnet** and **haskell** sdk and will give us extra **18GB**.
+This will remove **android**, **dotnet** and **haskell** sdk and we will give us extra **18GB**.
 
 ```yaml
 name: Free Disk Space
